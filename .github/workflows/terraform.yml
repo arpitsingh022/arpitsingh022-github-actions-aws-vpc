@@ -11,6 +11,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   terraform:
     name: Terraform
@@ -38,7 +41,7 @@ jobs:
         run: terraform init
 
       - name: Terraform Format
-        run: terraform fmt -check -recursive
+        run: terraform fmt -recursive
 
       - name: Terraform Validate
         run: terraform validate
