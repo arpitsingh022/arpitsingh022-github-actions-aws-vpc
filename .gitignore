@@ -1,0 +1,22 @@
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Sensitive variable files
+*.tfvars
+!terraform/terraform.tfvars
+
+# Credentials
+*.pem
+*.key
+.env
+
+# VS Code
+.vscode/
